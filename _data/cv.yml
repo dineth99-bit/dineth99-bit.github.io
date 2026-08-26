@@ -1,0 +1,193 @@
+cv:
+  name: Dineth Sanjula Jayakody
+  label: Ph.D. Student in Computer Science
+  email: djaya003@odu.edu
+  location: Norfolk, VA, USA
+  image: assets/img/prof_pic.png
+  summary: Ph.D. student in Computer Science at Old Dominion University. Research in applied machine learning, biomedical imaging, causal inference, and NLP. B.Sc. (Hons) Electrical and Information Engineering, First Class Honours, University of Ruhuna (OGPA 3.94/4.00).
+
+  social_networks:
+    - network: GitHub
+      username: dineth99-bit
+    - network: LinkedIn
+      username: dineth-jayakody-30977b196
+    - network: X
+      username: Dinethjkd
+
+  address:
+    city: Norfolk
+    region: Virginia
+    countryCode: US
+
+  sections:
+    Education:
+      - institution: Old Dominion University
+        location: Norfolk, Virginia, USA
+        url: https://www.odu.edu/
+        area: Computer Science
+        studyType: Ph.D.
+        start_date: 2025
+        end_date: 2028
+        score: "OGPA 4.00/4.00"
+        highlights:
+          - "Graduate Research Assistant, Wadduwage Lab"
+
+      - institution: University of Ruhuna
+        location: Galle, Sri Lanka
+        url: https://eng.ruh.ac.lk/
+        area: Electrical and Information Engineering
+        studyType: B.Sc. (Hons), First Class Honours
+        start_date: 2021
+        end_date: 2025
+        score: "OGPA 3.94/4.00 (highest in the batch)"
+
+      - institution: Vellore Institute of Technology
+        location: Chennai, India
+        area: AR/VR and Robotics
+        studyType: Certificate
+        start_date: 2024
+        end_date: 2024
+
+      - institution: E-soft Metro Campus
+        location: Colombo, Sri Lanka
+        area: Information Technology
+        studyType: Diploma
+        start_date: 2019
+        end_date: 2020
+
+    Experience:
+      - company: Department of Computer Science, Old Dominion University
+        position: Graduate Research Assistant
+        location: Norfolk, Virginia, USA
+        start_date: 2025-08
+        end_date: present
+        summary: Cross-disciplinary lab work in computer science, data science, and physics, focused on biomedical imaging, causal inference, and AI for healthcare.
+        highlights:
+          - Optical neural network designs
+          - Out-of-distribution detection and trustworthy ML
+          - Causal inference for biomedical imaging and NLP
+
+      - company: Codegen International (Pvt.) Ltd.
+        position: Software Engineer
+        location: Colombo, Sri Lanka
+        start_date: 2025-02
+        end_date: 2025-07
+        highlights:
+          - Built enterprise applications with a focus on scalability and maintainability
+          - Fine-tuned LLMs with instruction tuning and LoRA
+          - Implemented RAG pipelines with vector databases
+          - Deployed LLM applications with prompt engineering and hallucination reduction
+
+      - company: Codegen International (Pvt.) Ltd.
+        position: Trainee Software Engineer
+        location: Colombo, Sri Lanka
+        start_date: 2024-11
+        end_date: 2025-02
+        highlights:
+          - Worked on NLP and aspect-based sentiment analysis
+          - Data preprocessing, model optimization, and evaluation on SemEval and domain datasets
+
+      - company: Faculty of Engineering, University of Ruhuna
+        position: Student Instructor
+        location: Galle, Sri Lanka
+        start_date: 2024-01
+        end_date: 2024-11
+        highlights:
+          - Taught electronics and telecommunications laboratory sessions
+          - Designed experiments and assessed undergraduate performance
+
+    Awards:
+      - title: Ronnie De Mel Gold Medal
+        date: 2025
+        awarder: University of Ruhuna
+        summary: Best engineering graduate with the highest overall GPA in the batch (First Class Honours).
+
+      - title: Dr. A.D.V. Premaratne Memorial Gold Medal
+        date: 2025
+        awarder: University of Ruhuna
+        summary: Highest OGPA in the Department of Electrical and Information Engineering.
+
+      - title: BOC Award Gold Medal
+        date: 2025
+        awarder: University of Ruhuna
+        summary: Best overall student in the batch.
+
+      - title: Vice Chancellor's Award
+        date: 2025
+        awarder: University of Ruhuna
+        summary: Best overall student in academics and extracurricular activities over four years.
+
+      - title: Dean's Award for Best Overall Performance
+        date: 2024
+        awarder: University of Ruhuna
+        summary: Best overall student in academics and extracurricular activities (2021–2024).
+
+    Publications:
+      - title: "When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine"
+        authors:
+          - Dineth Jayakody
+          - Dushan Wadduwage
+        publisher: MMFM-BIOMED Workshop @ CVPR 2026
+        releaseDate: 2026
+
+      - title: "SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector"
+        authors:
+          - Dineth Jayakody
+          - Pasindu Thenahandi
+          - Sampath Jayarathne
+        publisher: IEEE IRI 2026
+        releaseDate: 2026
+
+      - title: "Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa"
+        authors:
+          - D.S. Jayakody
+          - K. Isuranda
+          - N. de Silva
+          - G.G.N. Sandamali
+          - K.L.K. Sudheera
+          - S. Rajith
+        publisher: PACLIC 2024
+        releaseDate: 2024
+        url: https://aclanthology.org/2024.paclic-1.63.pdf
+
+    Skills:
+      - name: Programming
+        keywords: "Python, C, C++, MATLAB"
+      - name: Machine Learning
+        keywords: "PyTorch, TensorFlow, Keras, Hugging Face, Scikit-learn, OpenCV, causal inference, XAI"
+      - name: NLP and LLMs
+        keywords: "BERT, DeBERTa, T5, GPT, RAG, LangChain, prompt engineering"
+      - name: Deployment
+        keywords: "Docker, Kubernetes, GitHub Actions, AWS, GCP, Azure, FastAPI, Flask"
+
+    Projects:
+      - name: Optical Neural Networks
+        summary: Compact optical neural network architectures for AI-driven perception and computation.
+      - name: Trustworthy ML for Biomedical Imaging
+        summary: Causal and hypothesis-driven methods for robustness, including OoD detection and proof-by-contradiction.
+      - name: Domain-Specific Sentiment Analysis
+        summary: Aspect-based sentiment analysis for textual feedback, including Instruct-DeBERTa.
+
+    Volunteer:
+      - company: Old Dominion University
+        position: Graduate School Ambassador
+        location: Norfolk, VA
+        start_date: 2026
+        end_date: present
+      - company: Computer Science Graduate Society, Old Dominion University
+        position: Treasurer
+        location: Norfolk, VA
+        start_date: 2026
+        end_date: 2027
+      - company: IEEE Communications Society, University of Ruhuna
+        position: Vice Chairman
+        start_date: 2023
+        end_date: 2023
+
+    References:
+      - name: Assistant Prof. Dushan Wadduwage
+        reference: "dwadduwa@odu.edu — Assistant Professor, Old Dominion University"
+      - name: Dr. Chatura Seneviratne
+        reference: "chatura@eie.ruh.ac.lk — Senior Lecturer, University of Ruhuna"
+      - name: Dr. Kushan Sudheera
+        reference: "kushan@eie.ruh.ac.lk — Senior Lecturer, University of Ruhuna"
