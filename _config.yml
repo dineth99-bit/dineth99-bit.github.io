@@ -306,6 +306,8 @@ sass:
 # -----------------------------------------------------------------------------
 
 jekyll-minifier:
+  preserve_patterns:
+    - google-site-verification
   compress_javascript: false # set to false since we are using terser as the js minifier
   # CSS is already minified upstream (Tailwind build ships tailwind.css; main.scss is compiled
   # with sass `style: compressed`). Re-minifying via cssminify2 mangles Tailwind v4 spacing

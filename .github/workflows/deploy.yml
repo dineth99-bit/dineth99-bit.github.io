@@ -94,6 +94,23 @@ jobs:
         run: |
           npm install -g purgecss
           purgecss -c purgecss.config.js
+      - name: Add Google site verification
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import re
+          tag = '<meta name="google-site-verification" content="ZwmsxCZ7D0T4Vq0Lxv1j6sT3NSQd26dRgt-ejzCt8IY">'
+          count = 0
+          for path in Path("_site").rglob("*.html"):
+              text = path.read_text(encoding="utf-8", errors="ignore")
+              if "google-site-verification" in text:
+                  continue
+              if re.search(r"<head[^>]*>", text, flags=re.IGNORECASE):
+                  text = re.sub(r"<head[^>]*>", lambda m: m.group(0) + tag, text, count=1, flags=re.IGNORECASE)
+                  path.write_text(text, encoding="utf-8")
+                  count += 1
+          print(f"injected verification tag into {count} pages")
+          PY
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
