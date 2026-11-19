@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" font-family="Lato, Verdana, Helvetica, sans-serif">
-<rect width="480" height="300" rx="14" fill="#0b7285"/>
-<circle cx="440" cy="40" r="120" fill="#fff" fill-opacity="0.08"/>
-<text x="24" y="110" font-size="52" font-weight="700" fill="#fff">ICTer 2024</text>
-<text x="24" y="160" font-size="26" fill="#fff" fill-opacity="0.92">Instruct-DeBERTa</text>
-<rect x="24" y="226" width="127" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="87.5" y="246" text-anchor="middle" font-size="15" fill="#fff">InstructABSA</text><rect x="159" y="226" width="110" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="214.0" y="246" text-anchor="middle" font-size="15" fill="#fff">DeBERTa-V3</text><rect x="277" y="226" width="110" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="332.0" y="246" text-anchor="middle" font-size="15" fill="#fff">SemEval-14</text>
-</svg>

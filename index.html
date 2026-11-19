@@ -50,9 +50,19 @@
 <body>
 
   <style>
+    .profile-photo-link {
+      display: block;
+      width: 200px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
     .profile-photo-link img {
       width: 100%;
-      max-width: 100%;
+      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border-radius: 50%;
+      display: block;
     }
     @media (max-width: 500px) {
       .about-section {
@@ -68,14 +78,7 @@
         padding-top: 2em !important;
       }
       .profile-photo-link {
-        display: block;
-        max-width: 240px;
-        margin: 0 auto;
-      }
-      .profile-photo-link img {
-        width: 100%;
-        max-width: 100%;
-        display: block;
+        width: 170px;
       }
       .name-header {
         padding-left: 0 !important;
@@ -87,7 +90,7 @@
       <td style="padding:0px">
         <table class="container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr class="about-section" style="padding:0px">
-            <td style="padding:2.5%;padding-top:7.5em;width:32%;max-width:32%;vertical-align:top">
+            <td style="padding:2.5%;width:32%;max-width:32%;vertical-align:middle">
               <a class="profile-photo-link" href="images/dineth.jpg"><img alt="profile photo" src="images/dineth.jpg"></a>
             </td>
             <td style="padding:2.5%;width:63%;vertical-align:middle">
@@ -101,7 +104,8 @@
                 <a href="https://wadduwagelab.com/">Wadduwage Lab</a> as a Graduate Research Assistant.
                 I graduated with First Class Honours in Electrical and Information Engineering from the
                 <a href="https://eng.ruh.ac.lk/">University of Ruhuna</a>, Sri Lanka, with the highest OGPA in my batch (3.94/4.00).
-                Before my Ph.D., I worked as a software engineer at Codegen International, building LLM applications,
+                Before my Ph.D., I worked as a software engineer at
+                <a href="https://codegen.co.uk/en-us">Codegen International</a>, building LLM applications,
                 RAG pipelines, and enterprise software.
               </p>
 
@@ -135,12 +139,13 @@
             <heading>&nbsp;&nbsp;Recent News</heading>
             <div class="news-content">
               <ul class="news-ul">
-                <li> Our paper <a href="https://arxiv.org/abs/2606.07896">Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</a> was accepted in <a href="https://opg.optica.org/oe/home.cfm">Optics Express</a>.</li>
-                <li> Accepted participant and poster presenter at the <a href="https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/2026">Gordon Research Conference on Optics and Photonics in Medicine and Biology</a>, presenting <a href="https://arxiv.org/abs/2601.06704">Beyond Perfect Scores</a>, and selected for the <a href="https://climb.illinois.edu/education-outreach/biophotonics-summer-school">CLIMB Biophotonics Summer School</a> at UIUC.</li>
-                <li> <a href="#jayakody2026sentimentlens">SentimentLens</a> was accepted at <a href="https://ieee-iri.github.io">IEEE IRI 2026</a>.</li>
-                <li> Our paper <a href="#jayakody2026modality">When Multimodal Models Stop Listening</a> was accepted at the <a href="https://mmfm-biomed.github.io/">MMFM-BIOMED Workshop</a> @ CVPR 2026.</li>
-                <li> Started my Ph.D. in Computer Science at <a href="https://www.odu.edu/computer-science">Old Dominion University</a> as a Graduate Research Assistant in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a>.</li>
-                <li> Received the Ronnie De Mel Gold Medal, the Dr. A.D.V. Premaratne Memorial Gold Medal, the BOC Award, and the Vice Chancellor's Award from the <a href="https://eng.ruh.ac.lk/">University of Ruhuna</a>.</li>
+                <li><b>Nov 2026</b> &nbsp; Our paper <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-23-43118">Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</a> was published in <a href="https://opg.optica.org/oe/home.cfm">Optics Express</a>.</li>
+                <li><b>Jul 2026</b> &nbsp; Presented a poster on <i>Volumetric Training for Visible-Range Diffractive Neural Networks</i> at the <a href="https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/2026">Gordon Research Conference on Optics and Photonics in Medicine and Biology</a>.</li>
+                <li><b>May 2026</b> &nbsp; Selected for the <a href="https://climb.illinois.edu/education-outreach/biophotonics-summer-school">CLIMB Biophotonics Summer School</a> at the University of Illinois Urbana-Champaign.</li>
+                <li><b>Apr 2026</b> &nbsp; Our paper <a href="#jayakody2026sentimentlens">SentimentLens</a> was accepted at <a href="https://ieee-iri.github.io">IEEE IRI 2026</a>.</li>
+                <li><b>Mar 2026</b> &nbsp; Our paper <a href="#jayakody2026modality">When Multimodal Models Stop Listening</a> was accepted at the <a href="https://mmfm-biomed.github.io/">MMFM-BIOMED Workshop</a> @ CVPR 2026.</li>
+                <li><b>Aug 2025</b> &nbsp; Started my Ph.D. in Computer Science at <a href="https://www.odu.edu/computer-science">Old Dominion University</a> as a Graduate Research Assistant in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a>.</li>
+                <li><b>Jun 2025</b> &nbsp; <a href="https://www.linkedin.com/feed/update/urn:li:activity:7405268357261918208/">Received the Ronnie De Mel Gold Medal, the Dr. A.D.V. Premaratne Memorial Gold Medal, the BOC Award, and the Vice Chancellor's Award</a> from the <a href="https://eng.ruh.ac.lk/">University of Ruhuna</a>.</li>
               </ul>
             </div>
           </td></tr>
@@ -189,13 +194,13 @@
         <table class="research-table container-wide" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/d2nn_imaging.jpg"><img src="images/d2nn_imaging.jpg" alt="Optical Neural Networks" loading="lazy"></a></td>
+              <a href="images/oe_fig4.jpg"><img src="images/oe_fig4.jpg" alt="Optical Neural Networks" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top">
               <p><papertitle>Optical Neural Networks</papertitle></p>
-              <p>Compact and efficient optical neural networks that move part of the AI computation into the optical domain, so imaging and inference happen with lower latency and energy cost. This work sits in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a> and connects to differentiable microscopy and biomedical imaging. Most recently: volumetric (&part;BPM) training for visible-range diffractive networks.</p>
+              <p>Compact and efficient optical neural networks that move part of the AI computation into the optical domain, so imaging and inference happen with lower latency and energy cost. This work sits in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a> and connects to differentiable microscopy and biomedical imaging. Most recently: volumetric (&part;BPM) training for visible-range diffractive networks, published in Optics Express.</p>
               <div class="paper">
-              <a href="#jayakody2026thinlayer">Optics Express paper</a> |
-              <a href="https://arxiv.org/abs/2606.07896">arXiv</a>
+              <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-23-43118">Optics Express paper</a> |
+              <a href="#jayakody2026thinlayer">publication details</a>
               </div>
             </td>
           </tr>
@@ -226,13 +231,15 @@
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Domain-Specific Sentiment Analysis" loading="lazy"></a></td>
+              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Natural Language Processing" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top">
-              <p><papertitle>Domain-Specific Sentiment Analysis</papertitle></p>
-              <p>My bachelor's thesis and follow-up papers on aspect-based sentiment analysis (ABSA) for reviews and other textual feedback: category extraction, Instruct-DeBERTa, and comparative studies of ABSA methods, with publications at PACLIC, WiNLP @ EMNLP, MERCon and ICTer.</p>
+              <p><papertitle>Natural Language Processing</papertitle></p>
+              <p>Natural language processing for domain-specific text. My bachelor's thesis and follow-up papers focus on aspect-based sentiment analysis (ABSA) for reviews and other textual feedback: category extraction, the hybrid Instruct-DeBERTa model, and comparative studies of ABSA methods, with publications at PACLIC, WiNLP @ EMNLP, MERCon and ICTer. More recently, SentimentLens (IEEE IRI 2026) reconciles what hotel reviews say with the ratings they give.</p>
               <div class="paper">
               <a href="#jayakody2024paclic">PACLIC 2024</a> |
               <a href="#jayakody2024winlp">WiNLP 2024</a> |
+              <a href="#jayakody2024icter">ICTer</a> |
+              <a href="#jayakody2026sentimentlens">SentimentLens</a> |
               <a href="https://github.com/dineth99-bit/FYP-Domain-Specific-Sentiment-Analysis-in-Textual-Feedback">code</a>
               </div>
             </td>
@@ -251,33 +258,40 @@
         <table class="research-table container-wide" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/dbpm_fdtd.jpg"><img src="images/dbpm_fdtd.jpg" alt="Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks" loading="lazy"></a></td>
+              <a href="images/oe_fig1.jpg"><img src="images/oe_fig1.jpg" alt="Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026thinlayer">
-              <p><a href="https://arxiv.org/abs/2606.07896"><papertitle>Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</papertitle></a><br>
+              <p><a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-23-43118"><papertitle>Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</papertitle></a><br>
               <b>Dineth Jayakody</b>, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
-              <br><b><a href="https://opg.optica.org/oe/home.cfm">Optics Express</a> 2026</b> (accepted, in production)<br>arXiv 2026
+              <br><b><a href="https://opg.optica.org/oe/home.cfm">Optics Express</a> 2026</b>, Vol. 34, Issue 23, pp. 43118
               </p>
               <div class="paper">
-              <a href="https://arxiv.org/pdf/2606.07896">pdf</a> |
-              <a href="https://arxiv.org/abs/2606.07896">arXiv</a> |
+              <a href="https://opg.optica.org/oe/fulltext.cfm?uri=oe-34-23-43118">paper</a> |
+              <a href="https://opg.optica.org/oe/viewmedia.cfm?uri=oe-34-23-43118&amp;seq=0">pdf</a> |
+              <a href="https://opg.optica.org/oe/viewmedia.cfm?uri=oe-34-23-43118&amp;seq=s001">supplement</a> |
+              <a href="https://doi.org/10.1364/OE.609758">DOI</a> |
               <a href="javascript:toggleblock('jayakody2026thinlayer-abstract', 'jayakody2026thinlayer-desc')">abstract</a> |
               <a shape="rect" href="javascript:toggleblock('jayakody2026thinlayer-bibtex', 'jayakody2026thinlayer-desc')" class="togglebib">bibtex</a>
-              <p align="justify"><i id="jayakody2026thinlayer-abstract" class="hidden">Diffractive deep neural networks (D2NNs) promise miniaturized, power-efficient, light-speed optical front-ends for machine vision, yet the most mature demonstrations remain in the terahertz regime, built from readily fabricated millimeter-scale neurons. Translating D2NNs to the visible range, where nearly all vision pipelines operate, was long blamed on the difficulty of fabricating nanoscale neurons; but even after recent advances removed that barrier, visible-range D2NNs matching their terahertz counterparts remain out of reach. We identify the true obstacle as the thin-layer approximation underlying nearly all D2NN training, which treats each diffractive layer as an infinitely thin mask. It fails not because of the short wavelength, as is commonly assumed, but because the low-refractive-index materials (n approximately 1.3-1.5) used at visible wavelengths require relief structures thick enough that intra-layer diffraction and phase accumulation become significant. To overcome this, we introduce a differentiable beam-propagation (&part;BPM) layer that models each element as a finite-thickness volume and propagates light through it during training, keeping the fabrication-compatible height map end-to-end trainable without full-wave simulation in the loop. Across MNIST, Fashion-MNIST, and CIFAR-100 classification and imaging, &part;BPM training substantially reduces the design-to-device mismatch, and full-wave FDTD validation raises classification accuracy from 50% to 90% without re-optimization. The &part;BPM layer thus offers a scalable, physics-aware bridge between efficient optical neural-network optimization and fabrication-consistent diffractive design.</i></p>
+              <p align="justify"><i id="jayakody2026thinlayer-abstract" class="hidden">Diffractive deep neural networks (<i>D</i><sup>2</sup>NNs) could provide compact, power-efficient optical front-ends for machine vision, but visible-range systems remain less experimentally mature than terahertz demonstrations. A key modeling challenge is the thin-layer approximation commonly used during training, which neglects field evolution within finite-thickness relief structures. We introduce a differentiable beam-propagation (&part;BPM) layer that represents each diffractive element as a finite-thickness volume while preserving end-to-end trainability without full-wave simulation in the training loop. After accounting for axial-reference-plane alignment and simple global calibration effects, the thin and volumetric descriptions converge for sufficiently thin reliefs, while task-dependent residual mismatch remains as thickness increases, especially for imaging and lower-index structures. Volumetric fine-tuning reduces this residual, and same-structure FDTD comparisons show that &part;BPM follows the full-wave field more closely than the thin-layer approximation. These results establish &part;BPM as a more faithful differentiable forward model for finite-thickness <i>D</i><sup>2</sup>NN design while identifying regimes where the thin approximation remains adequate.</i></p>
               <pre xml:space="preserve" id="jayakody2026thinlayer-bibtex" class="hidden">
 @article{jayakody2026thinlayer,
   title = {Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks},
   author = {Jayakody, Dineth and Wadduwage, Dushan N.},
   journal = {Optics Express},
-  year = {2026}
+  volume = {34},
+  number = {23},
+  pages = {43118},
+  year = {2026},
+  publisher = {Optica Publishing Group},
+  doi = {10.1364/OE.609758}
 }
               </pre>
               </div>
-              <p id="jayakody2026thinlayer-desc">A differentiable beam-propagation (&part;BPM) layer that trains each diffractive element as a finite-thickness volume, closing the design-to-device gap for visible-range D2NNs (FDTD accuracy 50% &rarr; 90%).</p>
+              <p id="jayakody2026thinlayer-desc">A differentiable beam-propagation (&part;BPM) layer that models each diffractive element as a finite-thickness volume; in same-structure FDTD comparisons it follows the full-wave field more closely than the thin-layer approximation.</p>
             </td>
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/tile_modality.svg"><img src="images/tile_modality.svg" alt="When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine" loading="lazy"></a></td>
+              <a href="images/cvpr2026.jpg"><img src="images/cvpr2026.jpg" alt="When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026modality">
               <p><a href="https://mmfm-biomed.github.io/"><papertitle>When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine</papertitle></a><br>
               <b>Dineth Jayakody</b>, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
@@ -302,19 +316,23 @@
             <td style="padding:20px;width:30%;vertical-align:top">
               <a href="images/tile_sentimentlens.svg"><img src="images/tile_sentimentlens.svg" alt="SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026sentimentlens">
-              <p><a href="https://ieee-iri.github.io"><papertitle>SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector</papertitle></a><br>
-              <b>Dineth Jayakody</b>, Pasindu Thenahandi, Sampath Jayarathne
-              <br><b><a href="https://ieee-iri.github.io">IEEE IRI 2026</a></b>
+              <p><a href="https://ieeexplore.ieee.org/document/11676637"><papertitle>SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector</papertitle></a><br>
+              <b>Dineth Jayakody</b>, Pasindu Thenahandi, Sampath Jayarathna
+              <br><b><a href="https://ieee-iri.github.io">IEEE IRI 2026</a></b>, pp. 350&ndash;355
               </p>
               <div class="paper">
-              <a href="https://ieee-iri.github.io">conference</a> |
+              <a href="https://ieeexplore.ieee.org/document/11676637">IEEE Xplore</a> |
+              <a href="https://doi.org/10.1109/IRI69576.2026.00072">DOI</a> |
               <a shape="rect" href="javascript:toggleblock('jayakody2026sentimentlens-bibtex', 'jayakody2026sentimentlens-desc')" class="togglebib">bibtex</a>
               <pre xml:space="preserve" id="jayakody2026sentimentlens-bibtex" class="hidden">
 @inproceedings{jayakody2026sentimentlens,
   title = {SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector},
-  author = {Jayakody, Dineth and Thenahandi, Pasindu and Jayarathne, Sampath},
-  booktitle = {IEEE International Conference on Information Reuse and Integration (IRI)},
-  year = {2026}
+  author = {Jayakody, Dineth and Thenahandi, Pasindu and Jayarathna, Sampath},
+  booktitle = {2026 IEEE International Conference on Information Reuse and Integration for Data Science (IRI)},
+  pages = {350--355},
+  year = {2026},
+  publisher = {IEEE},
+  doi = {10.1109/IRI69576.2026.00072}
 }
               </pre>
               </div>
@@ -350,14 +368,18 @@
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/tile_multisense.svg"><img src="images/tile_multisense.svg" alt="MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings" loading="lazy"></a></td>
+              <a href="images/multisense_pneumo.jpg"><img src="images/multisense_pneumo.jpg" alt="MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026multisense">
-              <p><papertitle>MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings</papertitle><br>
+              <p><a href="https://arxiv.org/abs/2605.02207"><papertitle>MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings</papertitle></a><br>
               <b>Dineth Jayakody</b>, Pasindu Thenahandi, Chameli Dilshani Menike Dommanige, Michael Pokojovy, Henry Han
-              <br><b>Southwest Data Science Conference (SDSC) 2026</b>, Springer proceedings
+              <br><b>Southwest Data Science Conference (SDSC) 2026</b>, Springer proceedings<br>arXiv 2026
               </p>
               <div class="paper">
+              <a href="https://arxiv.org/pdf/2605.02207">pdf</a> |
+              <a href="https://arxiv.org/abs/2605.02207">arXiv</a> |
+              <a href="javascript:toggleblock('jayakody2026multisense-abstract', 'jayakody2026multisense-desc')">abstract</a> |
               <a shape="rect" href="javascript:toggleblock('jayakody2026multisense-bibtex', 'jayakody2026multisense-desc')" class="togglebib">bibtex</a>
+              <p align="justify"><i id="jayakody2026multisense-abstract" class="hidden">Pneumonia remains a leading global cause of morbidity and mortality, particularly in low-resource settings where access to imaging, laboratory testing, and specialist care is limited. Clinical assessment relies on heterogeneous evidence, including symptoms, respiratory patterns, spoken descriptions, and chest imaging, making frontline screening inherently multimodal. However, many existing computational approaches remain unimodal and focus primarily on radiographs. In this work, we present MultiSense-Pneumo, a multimodal research prototype for pneumonia-oriented screening and triage support that integrates structured symptom descriptors, cough audio, spoken language, and chest radiographs. The system combines deterministic symptom triage, LightGBM-based acoustic classification, domain-adversarial radiograph analysis using ResNet-18, transformer-based speech recognition, and an interpretable late-fusion operator. Each modality is transformed into a normalized concern signal and aggregated into a unified screening estimate. The fusion weights are hand-specified and are treated as heuristic, interpretable parameters rather than learned or clinically optimized values. MultiSense-Pneumo is implemented with offline execution in mind on standard laptop-class hardware, but it is not presented as a deployment-validated or clinically validated diagnostic system. Experimental results demonstrate strong component-level performance of the radiograph pathway under synthetic domain shifts, while also highlighting important limitations, especially reduced abnormal-class recall for cough acoustics and the absence of paired end-to-end multimodal patient evaluation. MultiSense-Pneumo is therefore intended as a framework and component-level prototype for screening and triage research.</i></p>
               <pre xml:space="preserve" id="jayakody2026multisense-bibtex" class="hidden">
 @inproceedings{jayakody2026multisense,
   title = {MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings},
@@ -367,19 +389,23 @@
 }
               </pre>
               </div>
-              <p id="jayakody2026multisense-desc">A multimodal pneumonia-screening framework designed for settings with limited clinical resources.</p>
+              <p id="jayakody2026multisense-desc">A multimodal screening and triage prototype that fuses symptom triage, cough audio, spoken notes and chest X-rays into one interpretable pneumonia-concern estimate, built to run offline on a laptop.</p>
             </td>
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/tile_permutation.svg"><img src="images/tile_permutation.svg" alt="Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution" loading="lazy"></a></td>
+              <a href="images/thinking_in_groups.jpg"><img src="images/thinking_in_groups.jpg" alt="Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayawardana2026thinking">
-              <p><papertitle>Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution</papertitle><br>
+              <p><a href="https://arxiv.org/abs/2403.14058"><papertitle>Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution</papertitle></a><br>
               Yasith Jayawardana, <b>Dineth Jayakody</b>, Sampath Jayarathna, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
-              <br>Under review at <i>ACM Transactions on Probabilistic Machine Learning</i>
+              <br>Under review at <i>ACM Transactions on Probabilistic Machine Learning</i><br>arXiv
               </p>
               <div class="paper">
+              <a href="https://arxiv.org/pdf/2403.14058">pdf</a> |
+              <a href="https://arxiv.org/abs/2403.14058">arXiv</a> |
+              <a href="javascript:toggleblock('jayawardana2026thinking-abstract', 'jayawardana2026thinking-desc')">abstract</a> |
               <a shape="rect" href="javascript:toggleblock('jayawardana2026thinking-bibtex', 'jayawardana2026thinking-desc')" class="togglebib">bibtex</a>
+              <p align="justify"><i id="jayawardana2026thinking-abstract" class="hidden">Deep neural networks (DNNs) have the potential to power many biomedical workflows, but training them on truly representative, IID datasets is often infeasible. Most models instead rely on biased or incomplete data, making them prone to out-of-distribution (OoD) inputs that closely resemble in-distribution samples. Such near-OoD cases are harder to detect than standard OOD benchmarks and can cause unreliable, even catastrophic, predictions. Biomedical assays, however, offer a unique opportunity: they often generate multiple correlated measurements per specimen through biological or technical replicates. Exploiting this insight, we introduce Homogeneous OoD (HOoD), a novel OoD detection framework for correlated data. HOoD projects groups of correlated measurements through a trained model and uses permutation-based hypothesis tests to compare them with known subpopulations. Each test yields an interpretable p-value, quantifying how well a group matches a subpopulation. By aggregating these p-values, HOoD reliably identifies OoD groups. In evaluations, HOoD consistently outperforms point-wise and ensemble-based OoD detectors, demonstrating its promise for robust real-world deployment.</i></p>
               <pre xml:space="preserve" id="jayawardana2026thinking-bibtex" class="hidden">
 @article{jayawardana2026thinking,
   title = {Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution},
@@ -389,12 +415,12 @@
 }
               </pre>
               </div>
-              <p id="jayawardana2026thinking-desc">Uses permutation tests over groups of samples, rather than single inputs, to reveal near-out-of-distribution data.</p>
+              <p id="jayawardana2026thinking-desc">HOoD: passes groups of correlated measurements (biological or technical replicates) through a trained model and uses permutation tests against known subpopulations to flag near-out-of-distribution groups.</p>
             </td>
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa" loading="lazy"></a></td>
+              <a href="images/paclic2024.jpg"><img src="images/paclic2024.jpg" alt="Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024paclic">
               <p><a href="https://aclanthology.org/2024.paclic-1.63/"><papertitle>Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa</papertitle></a><br>
               <b>Dineth Jayakody</b>, Koshila Isuranda, Ava Malkith, Nisansa de Silva, Sachintha Rajith Ponnamperuma, G.G.N. Sandamali, K.L.K. Sudheera, Kashnika Gimhani Sarathchandra
@@ -470,7 +496,7 @@
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/tile_icter.svg"><img src="images/tile_icter.svg" alt="Instruct-DeBERTa: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews" loading="lazy"></a></td>
+              <a href="images/icter2024.jpg"><img src="images/icter2024.jpg" alt="Instruct-DeBERTa: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024icter">
               <p><a href="https://journal.icter.org/index.php/ICTer/article/view/719"><papertitle>Instruct-DeBERTa: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews</papertitle></a><br>
               <b>Dineth Jayakody</b>, A.V.A. Malkith, Koshila Isuranda, Vishal Thenuwara, Nisansa de Silva, Sachintha Rajith Ponnamperuma, G.G.N. Sandamali, K.L.K. Sudheera
@@ -493,7 +519,7 @@
           </tr>
           <tr>
             <td style="padding:20px;width:30%;vertical-align:top">
-              <a href="images/mcq_omr.jpg"><img src="images/mcq_omr.jpg" alt="MCQ Automated Grading Using Image Processing Techniques" loading="lazy"></a></td>
+              <a href="images/yms2024.jpg"><img src="images/yms2024.jpg" alt="MCQ Automated Grading Using Image Processing Techniques" loading="lazy"></a></td>
             <td style="padding:20px;width:70%;vertical-align:top" id="isuranda2024mcq">
               <p><a href="https://www.researchgate.net/publication/389210110_MCQ_Automated_Grading_Using_Image_Processing_Techniques"><papertitle>MCQ Automated Grading Using Image Processing Techniques</papertitle></a><br>
               Koshila Isuranda, <b>Dineth Jayakody</b>, A.V.A. Malkith
