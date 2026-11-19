@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 300" width="480" height="300" font-family="Lato, Verdana, Helvetica, sans-serif">
-<rect width="480" height="300" rx="14" fill="#e8590c"/>
-<circle cx="440" cy="40" r="120" fill="#fff" fill-opacity="0.08"/>
-<text x="24" y="110" font-size="52" font-weight="700" fill="#fff">IEEE IRI 2026</text>
-<text x="24" y="160" font-size="26" fill="#fff" fill-opacity="0.92">SentimentLens</text>
-<rect x="24" y="226" width="118" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="83.0" y="246" text-anchor="middle" font-size="15" fill="#fff">review text</text><rect x="150" y="226" width="127" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="213.5" y="246" text-anchor="middle" font-size="15" fill="#fff">star ratings</text><rect x="285" y="226" width="118" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="344.0" y="246" text-anchor="middle" font-size="15" fill="#fff">hospitality</text>
-</svg>
