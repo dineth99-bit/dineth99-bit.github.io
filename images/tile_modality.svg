@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 573 300" width="573" height="300" font-family="Lato, Verdana, Helvetica, sans-serif">
+<rect width="573" height="300" rx="14" fill="#1f6fd1"/>
+<circle cx="533" cy="40" r="120" fill="#fff" fill-opacity="0.08"/>
+<text x="24" y="110" font-size="52" font-weight="700" fill="#fff">CVPR 2026</text>
+<text x="24" y="160" font-size="26" fill="#fff" fill-opacity="0.92">MMFM-BIOMED Workshop</text>
+<rect x="24" y="226" width="178" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="113.0" y="246" text-anchor="middle" font-size="15" fill="#fff">modality imbalance</text><rect x="210" y="226" width="213" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="316.5" y="246" text-anchor="middle" font-size="15" fill="#fff">dominant-modality bias</text><rect x="431" y="226" width="118" height="30" rx="15" fill="#ffffff" fill-opacity="0.22"/><text x="490.0" y="246" text-anchor="middle" font-size="15" fill="#fff">biomedicine</text>
+</svg>

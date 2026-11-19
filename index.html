@@ -1,0 +1,558 @@
+<!DOCTYPE HTML>
+<html lang="en"><head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="google-site-verification" content="ZwmsxCZ7D0T4Vq0Lxv1j6sT3NSQd26dRgt-ejzCt8IY">
+  <meta name="description" content="Dineth Jayakody, Ph.D. student in Computer Science at Old Dominion University (Wadduwage Lab): optical neural networks, trustworthy ML, multimodal learning for biomedicine.">
+  <title>Dineth Jayakody</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="images/favicon.ico">
+
+  <style>
+    :root {
+      --container: 800px;       /* bio and news */
+      --container-wide: 960px;  /* projects and publications */
+    }
+    .container { max-width: var(--container); }
+    .container-wide { max-width: var(--container-wide); }
+    .hidden { display: none; }
+    .paper pre { overflow-x: auto; max-width: 100%; font-size: 12px; }
+  </style>
+
+  <script type="text/javascript">
+    let activeBlock = null
+    let $hiddenParaBlock = null
+    function toggleblock(selector, descParaSelector) {
+      let $descPara = descParaSelector ? document.getElementById(descParaSelector) : null
+      if (activeBlock) {
+        document.getElementById(activeBlock).style.display = 'none'
+      }
+      document.getElementById(selector).style.display = selector === activeBlock ? 'none' : 'block'
+      if (activeBlock === selector) {
+        activeBlock = null
+        if ($descPara) {
+          $descPara.style.display = 'block'
+        }
+      } else {
+        activeBlock = selector
+        if ($hiddenParaBlock && $hiddenParaBlock !== $descPara) {
+          $hiddenParaBlock.style.display = 'block'
+        }
+        if ($descPara) {
+          $descPara.style.display = 'none'
+          $hiddenParaBlock = $descPara
+        }
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <style>
+    .profile-photo-link img {
+      width: 100%;
+      max-width: 100%;
+    }
+    @media (max-width: 500px) {
+      .about-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .about-section td {
+        width: 95% !important;
+        max-width: 95% !important;
+      }
+      .about-section td:first-child {
+        padding-top: 2em !important;
+      }
+      .profile-photo-link {
+        display: block;
+        max-width: 240px;
+        margin: 0 auto;
+      }
+      .profile-photo-link img {
+        width: 100%;
+        max-width: 100%;
+        display: block;
+      }
+      .name-header {
+        padding-left: 0 !important;
+      }
+    }
+  </style>
+  <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table class="container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr class="about-section" style="padding:0px">
+            <td style="padding:2.5%;padding-top:7.5em;width:32%;max-width:32%;vertical-align:top">
+              <a class="profile-photo-link" href="images/dineth.jpg"><img alt="profile photo" src="images/dineth.jpg"></a>
+            </td>
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p class="name-header" style="text-align:center;margin-bottom:1.5em">
+                <name>Dineth Jayakody</name><br>
+                djaya003 at odu dot edu
+              </p>
+
+              <p>I am a Ph.D. student in Computer Science at <a href="https://www.odu.edu/computer-science">Old Dominion University</a>,
+                working with <a href="https://wadduwagelab.com/">Dr. Dushan Wadduwage</a> in the
+                <a href="https://wadduwagelab.com/">Wadduwage Lab</a> as a Graduate Research Assistant.
+                I graduated with First Class Honours in Electrical and Information Engineering from the
+                <a href="https://eng.ruh.ac.lk/">University of Ruhuna</a>, Sri Lanka, with the highest OGPA in my batch (3.94/4.00).
+                Before my Ph.D., I worked as a software engineer at Codegen International, building LLM applications,
+                RAG pipelines, and enterprise software.
+              </p>
+
+              <p>My research sits at the intersection of applied machine learning, biomedical imaging, causal inference,
+                and natural language processing. I am especially interested in optical neural networks and differentiable
+                microscopy, out-of-distribution detection and trustworthy ML, AI for biomedical applications, and
+                domain-specific NLP.
+              </p>
+
+              <p style="text-align:center">
+                <a href="mailto:djaya003@odu.edu">Email</a> &nbsp;/&nbsp;
+                <a href="assets/pdf/Dineth_Jayakody_Academic_CV.pdf">CV</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=605obQkAAAAJ&amp;hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/dineth99-bit">GitHub</a> &nbsp;/&nbsp;
+                <a href="https://www.linkedin.com/in/dineth-jayakody-30977b196">LinkedIn</a> &nbsp;/&nbsp;
+                <a href="https://www.researchgate.net/profile/Dineth-Jayakody">ResearchGate</a> &nbsp;/&nbsp;
+                <a href="https://x.com/Dinethjkd">X</a>
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <hr class="container"/>
+        <style>
+          .news-content { margin: 1em 0; }
+          .news-ul { margin: 0; }
+          .news-ul li { margin-bottom: 0.35em; }
+        </style>
+        <table class="container" width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr><td>
+            <heading>&nbsp;&nbsp;Recent News</heading>
+            <div class="news-content">
+              <ul class="news-ul">
+                <li> Our paper <a href="https://arxiv.org/abs/2606.07896">Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</a> was accepted in <a href="https://opg.optica.org/oe/home.cfm">Optics Express</a>.</li>
+                <li> Accepted participant and poster presenter at the <a href="https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/2026">Gordon Research Conference on Optics and Photonics in Medicine and Biology</a>, presenting <a href="https://arxiv.org/abs/2601.06704">Beyond Perfect Scores</a>, and selected for the <a href="https://climb.illinois.edu/education-outreach/biophotonics-summer-school">CLIMB Biophotonics Summer School</a> at UIUC.</li>
+                <li> <a href="#jayakody2026sentimentlens">SentimentLens</a> was accepted at <a href="https://ieee-iri.github.io">IEEE IRI 2026</a>.</li>
+                <li> Our paper <a href="#jayakody2026modality">When Multimodal Models Stop Listening</a> was accepted at the <a href="https://mmfm-biomed.github.io/">MMFM-BIOMED Workshop</a> @ CVPR 2026.</li>
+                <li> Started my Ph.D. in Computer Science at <a href="https://www.odu.edu/computer-science">Old Dominion University</a> as a Graduate Research Assistant in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a>.</li>
+                <li> Received the Ronnie De Mel Gold Medal, the Dr. A.D.V. Premaratne Memorial Gold Medal, the BOC Award, and the Vice Chancellor's Award from the <a href="https://eng.ruh.ac.lk/">University of Ruhuna</a>.</li>
+              </ul>
+            </div>
+          </td></tr>
+        </table>
+
+        <style>
+          .research-table {
+            overflow: hidden;
+            table-layout: fixed;
+          }
+          .research-table img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+            margin: 0 auto;
+          }
+          @media (max-width: 500px) {
+            .research-table tr {
+              display: flex;
+              flex-direction: column;
+              width: calc(100vw - 16px);
+              min-width: 100%;
+              flex-grow: 1;
+              height: 100%;
+              overflow: hidden;
+              padding-bottom: 20px;
+              margin-bottom: 20px;
+              border-bottom: 1px solid #e1e1e1;
+            }
+            .research-table td {
+              width: 98% !important;
+              padding: 5px !important;
+            }
+          }
+        </style>
+
+        <hr class="container-wide"/>
+        <table class="container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Projects</heading>
+              <p>Current and recent research directions.</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table class="research-table container-wide" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/d2nn_imaging.jpg"><img src="images/d2nn_imaging.jpg" alt="Optical Neural Networks" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top">
+              <p><papertitle>Optical Neural Networks</papertitle></p>
+              <p>Compact and efficient optical neural networks that move part of the AI computation into the optical domain, so imaging and inference happen with lower latency and energy cost. This work sits in the <a href="https://wadduwagelab.com/">Wadduwage Lab</a> and connects to differentiable microscopy and biomedical imaging. Most recently: volumetric (&part;BPM) training for visible-range diffractive networks.</p>
+              <div class="paper">
+              <a href="#jayakody2026thinlayer">Optics Express paper</a> |
+              <a href="https://arxiv.org/abs/2606.07896">arXiv</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/buckets_vs_accuracy.jpg"><img src="images/buckets_vs_accuracy.jpg" alt="Trustworthy Machine Learning" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top">
+              <p><papertitle>Trustworthy Machine Learning</papertitle></p>
+              <p>Causal and hypothesis-driven methods that make deep learning more reliable in biomedical imaging, computer vision and NLP: out-of-distribution detection with permutation tests, and a Rubin causal model&ndash;based stochastic proof-by-contradiction test for model reliability. Applications include pathogen detection, lung-cancer cell profiling and DNA-damage screening.</p>
+              <div class="paper">
+              <a href="#wadduwage2026beyond">Beyond Perfect Scores</a> |
+              <a href="#jayawardana2026thinking">Thinking in Groups</a> |
+              <a href="https://github.com/wadduwagelab/Beyond-Perfect-Scores">code</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_multimodal_project.svg"><img src="images/tile_multimodal_project.svg" alt="Multimodal Learning for Biomedicine" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top">
+              <p><papertitle>Multimodal Learning for Biomedicine</papertitle></p>
+              <p>How multimodal models fail when one modality dominates, and practical multimodal screening systems for low-resource settings.</p>
+              <div class="paper">
+              <a href="#jayakody2026modality">When Multimodal Models Stop Listening</a> |
+              <a href="#jayakody2026multisense">MultiSense-Pneumo</a>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Domain-Specific Sentiment Analysis" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top">
+              <p><papertitle>Domain-Specific Sentiment Analysis</papertitle></p>
+              <p>My bachelor's thesis and follow-up papers on aspect-based sentiment analysis (ABSA) for reviews and other textual feedback: category extraction, Instruct-DeBERTa, and comparative studies of ABSA methods, with publications at PACLIC, WiNLP @ EMNLP, MERCon and ICTer.</p>
+              <div class="paper">
+              <a href="#jayakody2024paclic">PACLIC 2024</a> |
+              <a href="#jayakody2024winlp">WiNLP 2024</a> |
+              <a href="https://github.com/dineth99-bit/FYP-Domain-Specific-Sentiment-Analysis-in-Textual-Feedback">code</a>
+              </div>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <hr class="container-wide"/>
+        <table class="container" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>Publications and preprints. A full list is on <a href="https://scholar.google.com/citations?user=605obQkAAAAJ&amp;hl=en">Google Scholar</a>.</p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table class="research-table container-wide" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/dbpm_fdtd.jpg"><img src="images/dbpm_fdtd.jpg" alt="Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026thinlayer">
+              <p><a href="https://arxiv.org/abs/2606.07896"><papertitle>Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks</papertitle></a><br>
+              <b>Dineth Jayakody</b>, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
+              <br><b><a href="https://opg.optica.org/oe/home.cfm">Optics Express</a> 2026</b> (accepted, in production)<br>arXiv 2026
+              </p>
+              <div class="paper">
+              <a href="https://arxiv.org/pdf/2606.07896">pdf</a> |
+              <a href="https://arxiv.org/abs/2606.07896">arXiv</a> |
+              <a href="javascript:toggleblock('jayakody2026thinlayer-abstract', 'jayakody2026thinlayer-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2026thinlayer-bibtex', 'jayakody2026thinlayer-desc')" class="togglebib">bibtex</a>
+              <p align="justify"><i id="jayakody2026thinlayer-abstract" class="hidden">Diffractive deep neural networks (D2NNs) promise miniaturized, power-efficient, light-speed optical front-ends for machine vision, yet the most mature demonstrations remain in the terahertz regime, built from readily fabricated millimeter-scale neurons. Translating D2NNs to the visible range, where nearly all vision pipelines operate, was long blamed on the difficulty of fabricating nanoscale neurons; but even after recent advances removed that barrier, visible-range D2NNs matching their terahertz counterparts remain out of reach. We identify the true obstacle as the thin-layer approximation underlying nearly all D2NN training, which treats each diffractive layer as an infinitely thin mask. It fails not because of the short wavelength, as is commonly assumed, but because the low-refractive-index materials (n approximately 1.3-1.5) used at visible wavelengths require relief structures thick enough that intra-layer diffraction and phase accumulation become significant. To overcome this, we introduce a differentiable beam-propagation (&part;BPM) layer that models each element as a finite-thickness volume and propagates light through it during training, keeping the fabrication-compatible height map end-to-end trainable without full-wave simulation in the loop. Across MNIST, Fashion-MNIST, and CIFAR-100 classification and imaging, &part;BPM training substantially reduces the design-to-device mismatch, and full-wave FDTD validation raises classification accuracy from 50% to 90% without re-optimization. The &part;BPM layer thus offers a scalable, physics-aware bridge between efficient optical neural-network optimization and fabrication-consistent diffractive design.</i></p>
+              <pre xml:space="preserve" id="jayakody2026thinlayer-bibtex" class="hidden">
+@article{jayakody2026thinlayer,
+  title = {Beyond the Thin-Layer Limit: Differentiable Volumetric Training for Visible-Range Diffractive Neural Networks},
+  author = {Jayakody, Dineth and Wadduwage, Dushan N.},
+  journal = {Optics Express},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="jayakody2026thinlayer-desc">A differentiable beam-propagation (&part;BPM) layer that trains each diffractive element as a finite-thickness volume, closing the design-to-device gap for visible-range D2NNs (FDTD accuracy 50% &rarr; 90%).</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_modality.svg"><img src="images/tile_modality.svg" alt="When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026modality">
+              <p><a href="https://mmfm-biomed.github.io/"><papertitle>When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine</papertitle></a><br>
+              <b>Dineth Jayakody</b>, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
+              <br><b><a href="https://mmfm-biomed.github.io/">MMFM-BIOMED Workshop</a> @ CVPR 2026</b>
+              </p>
+              <div class="paper">
+              <a href="https://mmfm-biomed.github.io/">workshop</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2026modality-bibtex', 'jayakody2026modality-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2026modality-bibtex" class="hidden">
+@inproceedings{jayakody2026modality,
+  title = {When Multimodal Models Stop Listening: Modality Imbalance Induces Dominant-Modality Bias in Biomedicine},
+  author = {Jayakody, Dineth and Wadduwage, Dushan},
+  booktitle = {MMFM-BIOMED Workshop at CVPR},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="jayakody2026modality-desc">Shows that modality imbalance in training data pushes biomedical multimodal models to rely on the dominant modality and stop using the others.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_sentimentlens.svg"><img src="images/tile_sentimentlens.svg" alt="SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026sentimentlens">
+              <p><a href="https://ieee-iri.github.io"><papertitle>SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector</papertitle></a><br>
+              <b>Dineth Jayakody</b>, Pasindu Thenahandi, Sampath Jayarathne
+              <br><b><a href="https://ieee-iri.github.io">IEEE IRI 2026</a></b>
+              </p>
+              <div class="paper">
+              <a href="https://ieee-iri.github.io">conference</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2026sentimentlens-bibtex', 'jayakody2026sentimentlens-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2026sentimentlens-bibtex" class="hidden">
+@inproceedings{jayakody2026sentimentlens,
+  title = {SentimentLens: Reconciling Sentiment and Ratings via Dual-Modality in the Hospitality Sector},
+  author = {Jayakody, Dineth and Thenahandi, Pasindu and Jayarathne, Sampath},
+  booktitle = {IEEE International Conference on Information Reuse and Integration (IRI)},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="jayakody2026sentimentlens-desc">A dual-modality approach that reconciles what hotel reviews say with the star ratings they give.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/beyond_perfect_scores.jpg"><img src="images/beyond_perfect_scores.jpg" alt="Beyond Perfect Scores: Proof-by-Contradiction for Trustworthy Machine Learning" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="wadduwage2026beyond">
+              <p><a href="https://arxiv.org/abs/2601.06704"><papertitle>Beyond Perfect Scores: Proof-by-Contradiction for Trustworthy Machine Learning</papertitle></a><br>
+              <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>, <b>Dineth Jayakody</b>, Leonidas Zimianitis
+              <br><b><a href="https://www.grc.org/optics-and-photonics-in-medicine-and-biology-conference/2026">Gordon Research Conference on Optics and Photonics in Medicine and Biology</a> 2026</b> (poster)<br>arXiv 2026
+              </p>
+              <div class="paper">
+              <a href="https://arxiv.org/pdf/2601.06704">pdf</a> |
+              <a href="https://arxiv.org/abs/2601.06704">arXiv</a> |
+              <a href="https://github.com/wadduwagelab/Beyond-Perfect-Scores">code</a> |
+              <a href="javascript:toggleblock('wadduwage2026beyond-abstract', 'wadduwage2026beyond-desc')">abstract</a> |
+              <a shape="rect" href="javascript:toggleblock('wadduwage2026beyond-bibtex', 'wadduwage2026beyond-desc')" class="togglebib">bibtex</a>
+              <p align="justify"><i id="wadduwage2026beyond-abstract" class="hidden">Machine learning (ML) models show strong promise for new biomedical prediction tasks, but concerns about trustworthiness have hindered their clinical adoption. In particular, it is often unclear whether a model relies on true clinical cues or on spurious hierarchical correlations in the data. This paper introduces a simple yet broadly applicable trustworthiness test grounded in stochastic proof-by-contradiction. Instead of just showing high test performance, our approach trains and tests on spurious labels carefully permuted based on a potential outcomes framework. A truly trustworthy model should fail under such label permutation; comparable accuracy across real and permuted labels indicates overfitting, shortcut learning, or data leakage. Our approach quantifies this behavior through interpretable Fisher-style p-values, which are well understood by domain experts across medical and life sciences. We evaluate our approach on multiple new bacterial diagnostics to separate tasks and models learning genuine causal relationships from those driven by dataset artifacts or statistical coincidences. Our work establishes a foundation to build rigor and trust between ML and life-science research communities, moving ML models one step closer to clinical adoption.</i></p>
+              <pre xml:space="preserve" id="wadduwage2026beyond-bibtex" class="hidden">
+@inproceedings{wadduwage2026beyond,
+  title = {Beyond Perfect Scores: Proof-by-Contradiction for Trustworthy Machine Learning},
+  author = {Wadduwage, Dushan and Jayakody, Dineth and Zimianitis, Leonidas},
+  booktitle = {Gordon Research Conference on Optics and Photonics in Medicine and Biology},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="wadduwage2026beyond-desc">A permutation-based trustworthiness test: retrain under bucket-level label permutations and report a Fisher-style p-value, so a model that scores well on spurious labels is caught.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_multisense.svg"><img src="images/tile_multisense.svg" alt="MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2026multisense">
+              <p><papertitle>MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings</papertitle><br>
+              <b>Dineth Jayakody</b>, Pasindu Thenahandi, Chameli Dilshani Menike Dommanige, Michael Pokojovy, Henry Han
+              <br><b>Southwest Data Science Conference (SDSC) 2026</b>, Springer proceedings
+              </p>
+              <div class="paper">
+              <a shape="rect" href="javascript:toggleblock('jayakody2026multisense-bibtex', 'jayakody2026multisense-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2026multisense-bibtex" class="hidden">
+@inproceedings{jayakody2026multisense,
+  title = {MultiSense-Pneumo: A Multimodal Learning Framework for Pneumonia Screening in Resource-Constrained Settings},
+  author = {Jayakody, Dineth and Thenahandi, Pasindu and Dommanige, Chameli Dilshani Menike and Pokojovy, Michael and Han, Henry},
+  booktitle = {Springer proceedings of SDSC},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="jayakody2026multisense-desc">A multimodal pneumonia-screening framework designed for settings with limited clinical resources.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_permutation.svg"><img src="images/tile_permutation.svg" alt="Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayawardana2026thinking">
+              <p><papertitle>Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution</papertitle><br>
+              Yasith Jayawardana, <b>Dineth Jayakody</b>, Sampath Jayarathna, <a href="https://wadduwagelab.com/">Dushan N. Wadduwage</a>
+              <br>Under review at <i>ACM Transactions on Probabilistic Machine Learning</i>
+              </p>
+              <div class="paper">
+              <a shape="rect" href="javascript:toggleblock('jayawardana2026thinking-bibtex', 'jayawardana2026thinking-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayawardana2026thinking-bibtex" class="hidden">
+@article{jayawardana2026thinking,
+  title = {Thinking in Groups: Permutation Tests Reveal Near-Out-of-Distribution},
+  author = {Jayawardana, Yasith and Jayakody, Dineth and Jayarathna, Sampath and Wadduwage, Dushan},
+  journal = {Under review at ACM Transactions on Probabilistic Machine Learning},
+  year = {2026}
+}
+              </pre>
+              </div>
+              <p id="jayawardana2026thinking-desc">Uses permutation tests over groups of samples, rather than single inputs, to reveal near-out-of-distribution data.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024paclic">
+              <p><a href="https://aclanthology.org/2024.paclic-1.63/"><papertitle>Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa</papertitle></a><br>
+              <b>Dineth Jayakody</b>, Koshila Isuranda, Ava Malkith, Nisansa de Silva, Sachintha Rajith Ponnamperuma, G.G.N. Sandamali, K.L.K. Sudheera, Kashnika Gimhani Sarathchandra
+              <br><b><a href="https://aclanthology.org/volumes/2024.paclic-1/">PACLIC 2024</a></b>, Tokyo, Japan
+              </p>
+              <div class="paper">
+              <a href="https://aclanthology.org/2024.paclic-1.63.pdf">pdf</a> |
+              <a href="https://aclanthology.org/2024.paclic-1.63/">ACL Anthology</a> |
+              <a href="https://github.com/dineth99-bit/FYP-Domain-Specific-Sentiment-Analysis-in-Textual-Feedback">code</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2024paclic-bibtex', 'jayakody2024paclic-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2024paclic-bibtex" class="hidden">
+@inproceedings{jayakody2024paclic,
+  title = {Enhanced Aspect-Based Sentiment Analysis with Integrated Category Extraction for Instruct-DeBERTa},
+  author = {Jayakody, D.S. and Isuranda, K. and de Silva, N. and Sandamali, G.G.N. and Sudheera, K.L.K. and Rajith, S.},
+  booktitle = {38th Pacific Asia Conference on Language, Information and Computation (PACLIC)},
+  year = {2024},
+  address = {Tokyo, Japan}
+}
+              </pre>
+              </div>
+              <p id="jayakody2024paclic-desc">Extends Instruct-DeBERTa with aspect-category extraction, so one pipeline extracts aspect terms, categories and their sentiment.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/instruct_deberta.jpg"><img src="images/instruct_deberta.jpg" alt="Instruct-DeBERTa: A Hybrid Approach for Enhanced Aspect-Based Sentiment Analysis with Category Extraction" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024winlp">
+              <p><a href="https://openreview.net/forum?id=DS6THG8s9w"><papertitle>Instruct-DeBERTa: A Hybrid Approach for Enhanced Aspect-Based Sentiment Analysis with Category Extraction</papertitle></a><br>
+              <b>Dineth Jayakody</b>, Koshila Isuranda, Nisansa de Silva, G.G.N. Sandamali, K.L.K. Sudheera, Sachintha Rajith Ponnamperuma
+              <br><b>Widening NLP Workshop (WiNLP) @ <a href="https://2024.emnlp.org/">EMNLP 2024</a></b>, Florida, USA
+              </p>
+              <div class="paper">
+              <a href="https://openreview.net/pdf?id=DS6THG8s9w">pdf</a> |
+              <a href="https://openreview.net/forum?id=DS6THG8s9w">OpenReview</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2024winlp-bibtex', 'jayakody2024winlp-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2024winlp-bibtex" class="hidden">
+@inproceedings{jayakody2024winlp,
+  title = {{Instruct-DeBERTa}: A Hybrid Approach for Enhanced Aspect-Based Sentiment Analysis with Category Extraction},
+  author = {Jayakody, D.S. and Isuranda, K. and de Silva, N. and Sandamali, G.G.N. and Sudheera, K.L.K. and Rajith, S.},
+  booktitle = {Eighth Widening NLP Workshop (WiNLP 2024) Phase II at EMNLP},
+  year = {2024},
+  address = {Florida, USA}
+}
+              </pre>
+              </div>
+              <p id="jayakody2024winlp-desc">Hybrid ABSA model: InstructABSA for aspect-term extraction and a DeBERTa-V3 classifier for aspect sentiment.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_mercon.svg"><img src="images/tile_mercon.svg" alt="Aspect-based Sentiment Analysis Techniques: A Comparative Study" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024mercon">
+              <p><a href="https://ieeexplore.ieee.org/abstract/document/10688631"><papertitle>Aspect-based Sentiment Analysis Techniques: A Comparative Study</papertitle></a><br>
+              <b>Dineth Jayakody</b>, Koshila Isuranda, A.V.A. Malkith, Nisansa de Silva, Sachintha Rajith Ponnamperuma, G.G.N. Sandamali, K.L.K. Sudheera
+              <br><b><a href="https://mercon.uom.lk/">MERCon 2024</a></b>, IEEE
+              </p>
+              <div class="paper">
+              <a href="https://ieeexplore.ieee.org/abstract/document/10688631">IEEE Xplore</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2024mercon-bibtex', 'jayakody2024mercon-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2024mercon-bibtex" class="hidden">
+@inproceedings{jayakody2024mercon,
+  title = {Aspect-based Sentiment Analysis Techniques: A Comparative Study},
+  author = {Jayakody, D.S. and Isuranda, K. and Malkith, A.V.A. and De Silva, N. and Ponnamperuma, S.R. and Sandamali, G.G.N. and Sudheera, K.L.K.},
+  booktitle = {2024 Moratuwa Engineering Research Conference (MERCon)},
+  pages = {205--210},
+  year = {2024},
+  publisher = {IEEE}
+}
+              </pre>
+              </div>
+              <p id="jayakody2024mercon-desc">A comparative study of techniques for aspect-based sentiment analysis.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/tile_icter.svg"><img src="images/tile_icter.svg" alt="Instruct-DeBERTa: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="jayakody2024icter">
+              <p><a href="https://journal.icter.org/index.php/ICTer/article/view/719"><papertitle>Instruct-DeBERTa: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews</papertitle></a><br>
+              <b>Dineth Jayakody</b>, A.V.A. Malkith, Koshila Isuranda, Vishal Thenuwara, Nisansa de Silva, Sachintha Rajith Ponnamperuma, G.G.N. Sandamali, K.L.K. Sudheera
+              <br><b><a href="https://journal.icter.org/">International Journal on Advances in ICT for Emerging Regions (ICTer)</a></b>
+              </p>
+              <div class="paper">
+              <a href="https://journal.icter.org/index.php/ICTer/article/view/719">journal</a> |
+              <a shape="rect" href="javascript:toggleblock('jayakody2024icter-bibtex', 'jayakody2024icter-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="jayakody2024icter-bibtex" class="hidden">
+@article{jayakody2024icter,
+  title = {{Instruct-DeBERTa}: A Hybrid Approach for Aspect-based Sentiment Analysis on Textual Reviews},
+  author = {Jayakody, D.S. and Malkith, A.V.A. and Isuranda, K. and Thenuwara, V. and de Silva, N. and Ponnamperuma, S.R. and Sandamali, G.G.N. and Sudheera, K.L.K.},
+  journal = {The International Journal on Advances in ICT for Emerging Regions (ICTer)},
+  year = {2024}
+}
+              </pre>
+              </div>
+              <p id="jayakody2024icter-desc">Journal version: reviews the evolution of ABSA methods and reports Instruct-DeBERTa as the best joint extraction-and-classification model on the SemEval 2014 restaurant and laptop datasets.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/mcq_omr.jpg"><img src="images/mcq_omr.jpg" alt="MCQ Automated Grading Using Image Processing Techniques" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="isuranda2024mcq">
+              <p><a href="https://www.researchgate.net/publication/389210110_MCQ_Automated_Grading_Using_Image_Processing_Techniques"><papertitle>MCQ Automated Grading Using Image Processing Techniques</papertitle></a><br>
+              Koshila Isuranda, <b>Dineth Jayakody</b>, A.V.A. Malkith
+              <br><b>YMS Technical Conference 2024</b>
+              </p>
+              <div class="paper">
+              <a href="https://www.researchgate.net/publication/389210110_MCQ_Automated_Grading_Using_Image_Processing_Techniques">paper</a> |
+              <a href="https://github.com/dineth99-bit/MCQ-Automated-Grading-Using-Image-Processing-Techniques">code</a> |
+              <a shape="rect" href="javascript:toggleblock('isuranda2024mcq-bibtex', 'isuranda2024mcq-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="isuranda2024mcq-bibtex" class="hidden">
+@inproceedings{isuranda2024mcq,
+  title = {MCQ Automated Grading Using Image Processing Techniques},
+  author = {Isuranda, K. and Jayakody, D.S. and Malkith, A.V.A.},
+  booktitle = {YMS Technical Conference},
+  year = {2024}
+}
+              </pre>
+              </div>
+              <p id="isuranda2024mcq-desc">An optical mark recognition pipeline that grades scanned multiple-choice answer sheets automatically.</p>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:20px;width:30%;vertical-align:top">
+              <a href="images/gradesgo.jpg"><img src="images/gradesgo.jpg" alt="GradesGo: A Comprehensive Practical Framework for Calculating Grade One Admission Marks" loading="lazy"></a></td>
+            <td style="padding:20px;width:70%;vertical-align:top" id="ganegoda2024gradesgo">
+              <p><a href="https://github.com/dineth99-bit/GradesGo-Project"><papertitle>GradesGo: A Comprehensive Practical Framework for Calculating Grade One Admission Marks</papertitle></a><br>
+              G.S.S.S. Ganegoda, <b>Dineth Jayakody</b>, M.A.K. Isuranda, G. Priyankara
+              <br><b>Academic Sessions and Vice Chancellor's Awards</b>, University of Ruhuna 2024
+              </p>
+              <div class="paper">
+              <a href="https://github.com/dineth99-bit/GradesGo-Project">code</a> |
+              <a shape="rect" href="javascript:toggleblock('ganegoda2024gradesgo-bibtex', 'ganegoda2024gradesgo-desc')" class="togglebib">bibtex</a>
+              <pre xml:space="preserve" id="ganegoda2024gradesgo-bibtex" class="hidden">
+@inproceedings{ganegoda2024gradesgo,
+  title = {{GradesGo} -- A Comprehensive Practical Framework for Calculating Grade One Admission Marks},
+  author = {Ganegoda, G.S.S.S. and Jayakody, D.S. and Isuranda, M.A.K. and Priyankara, G.},
+  booktitle = {Academic Sessions and Vice Chancellor&#x27;s Awards, University of Ruhuna},
+  year = {2024}
+}
+              </pre>
+              </div>
+              <p id="ganegoda2024gradesgo-desc">A web system that automates Sri Lankan Grade 1 school-admission marking, including map-based distance checks.</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Design adapted from <a style="font-size:small;" href="https://asaran.github.io/">Akanksha Saran</a>'s site,
+                based on <a style="font-size:small;" href="https://jonbarron.info/">Jon Barron</a>'s template.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+</body>
+</html>
